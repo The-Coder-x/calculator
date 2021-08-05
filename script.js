@@ -32,95 +32,103 @@ for(item of buttons){
           }
         else if(buttonText == 'sin'){
             buttonText = "Math.sin(";
-            console.log(buttonText);
+            // console.log(buttonText);
             screenValue += buttonText;
             screen.value  = screenValue;
 
           }
         else if(buttonText == 'cos'){
             buttonText = "Math.cos(";
-            console.log(buttonText);
+            // console.log(buttonText);
             screenValue += buttonText;
             screen.value  = screenValue;
 
           }
         else if(buttonText == 'tan'){
             buttonText = "Math.tan(";
-            console.log(buttonText);
+            // console.log(buttonText);
             screenValue += buttonText;
             screen.value  = screenValue;
 
           }
         else if(buttonText == '√'){
             buttonText = "Math.sqrt(";
-            console.log(buttonText);
+            // console.log(buttonText);
             screenValue += buttonText;
             screen.value  = screenValue;
 
           }
         else if(buttonText == '3√'){
             buttonText = "Math.cbrt(";
-            console.log(buttonText);
+            // console.log(buttonText);
             screenValue += buttonText;
             screen.value  = screenValue;
 
           }
         else if(buttonText == '^'){
             buttonText = "Math.pow(";
-            console.log(buttonText);
+            // console.log(buttonText);
             screenValue += buttonText;
             screen.value  = screenValue;
 
           }
         else if(buttonText == 'π'){
             buttonText = "Math.PI * ";
-            console.log(buttonText);
+            // console.log(buttonText);
             screenValue += buttonText;
             screen.value  = screenValue;
 
           }
         else if(buttonText == 'e'){
             buttonText = "Math.exp(";
-            console.log(buttonText);
+            // console.log(buttonText);
             screenValue += buttonText;
             screen.value  = screenValue;
 
           }
         else if(buttonText == 'log'){
             buttonText = "Math.log(";
-            console.log(buttonText);
+            // console.log(buttonText);
             screenValue += buttonText;
             screen.value  = screenValue;
 
           }
-        
-        
+        else if(buttonText == '!'){
+            buttonText = "fact(";
+            // console.log(buttonText);
+            screenValue += buttonText;
+            screen.value  = screenValue;
+
+          }
         
         else if(buttonText == '='){
             screen.value = eval(screenValue);
             
         }
        
-             
         else{
             screenValue += buttonText;
             screen.value  = screenValue;
            
         }
 
-        
-
-
     })
 }
 
-
+function fact(buttonText) {
+  if (buttonText < 0) 
+        return -1;
+  else if (buttonText == 0) 
+      return 1;
+  else {
+      return (buttonText * fact(buttonText - 1));
+  }
+}
 
 const togglebtn = document.getElementsByClassName("toggle_btn")[0];
 
 const navbarlinks = document.getElementsByClassName('navbar-links')[0];
 const child_container = document.getElementsByClassName("child_container")[0];
-
 
 togglebtn.addEventListener('click' , () =>{
     navbarlinks.classList.toggle('active');

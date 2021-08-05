@@ -1,2 +1,2 @@
 # calculator
- my first calculator 
+scientific calculator

@@ -29,12 +29,9 @@
   height: 50px;
   background-color: #1f1f1f;
   color: #bfbfbf;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 10px auto;
   border-radius: 8px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   outline: none;
 }
 input {
@@ -53,7 +50,7 @@ input {
 }
 /* buttons */
 .btn {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 50px;
   width: 75px;
   border-radius: 20px;
@@ -87,6 +84,8 @@ input {
   background-color: cyan;
   border-radius: 10px;
 }
+
+
 #extra_function {
   display: none;
   /* background-color: greenyellow; */
